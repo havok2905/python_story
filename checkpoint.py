@@ -38,5 +38,4 @@ current = a
 while not end:
   response = current.prompt_options()
   end = current.should_end(response)
-  if not end:
-    current = current.progress(int(response))
+  current = current.progress(int(response))
